@@ -46,4 +46,37 @@ arreglo2dimensiones.forEach((arreglointerno2, index) => {
     });
 });
 //funcion flecha
+let a3=[];
+
+let arregloi2=[[3,4,5,6],[7,8,9]];
+a3.push(arregloi2);
+
+const leera3 = () =>{
+    a3.forEach((arregloi2, indice) =>{
+        console.log(`Datos del arreglo interno ${indice + 1}:`);
+        arregloi2.forEach(elemento => {
+            console.log(elemento);
+        });
+    });
+};
+leera3();
+
 //while
+let arre4 = [];
+
+let arregloin4 = [[3, 4, 5, 6], [7, 8, 9]];
+arre4.push(arregloin4);
+
+let i = 0;
+console.log("");
+while (i < arre4[0][0].length) {
+    console.log(arre4[0][0][i]);
+    i++;
+}
+
+i = 0; 
+console.log("---");
+while (i < arre4[0][1].length) {
+    console.log(arre4[0][1][i]);
+    i++;
+}
