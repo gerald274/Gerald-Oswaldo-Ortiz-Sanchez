@@ -1,10 +1,49 @@
-let arreglo2D =[];
+/*/Realizar un arreglo con dos dimensiones
+y guardar dos arreglos internos y dar lectura a los datos
+internos*/
 
-let arreglo1= [1,2,3,4];
-let arreglo2= ['a','b','c','d'];
+let A=[[3,4,5,6],[7,8,9]];
 
-function lectura(){
-    for (let i=0;i<arreglo1.length;i++){
-        let valores[arreglo1]
+const datosArreglo=()=>{
+    A.map((datos)=>{
+        datos.map((valores,i)=>{
+            console.log(`${i}=${valores}`);
+        })
+    });
+}
+
+//for of
+let arreglo2d=[];
+
+let arreglointerno=[[3,4,5,6],[7,8,9]];
+arreglo2d.push(arreglointerno);
+for (const arreglo of arreglo2d){
+    for (const elemento of arreglo){
+        console.log(elemento);
     }
 }
+//for in
+//for each
+//funcion flecha
+//while
+
+//Estructura de control parser
+let a=4;
+let b=5;
+
+function Decision(){
+
+   /*  if(a>b){
+        console.log(`La a es mayor ${a}`);
+        
+    }else{
+        console.log(`La b es mayor ${b}`); 
+    } */
+
+       const comparar= a>b?"A es mayor":"b es mayor";
+       console.log(comparar);
+       
+}
+
+Decision();
+//datosArreglo();
