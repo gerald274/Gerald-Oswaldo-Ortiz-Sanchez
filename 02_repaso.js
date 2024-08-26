@@ -23,27 +23,27 @@ for (const arreglo of arreglo2d){
     }
 }
 //for in
-//for each
-//funcion flecha
-//while
+let arreglo2di=[];
 
-//Estructura de control parser
-let a=4;
-let b=5;
+let arreglointerno1=[[3,4,5,6],[7,8,9]];
+arreglo2di.push(arreglointerno1);
 
-function Decision(){
+console.log("");
+for (let indice in arreglo2di[0],[1]) {
+    console.log(arreglo2di[0],[1][indice]);
 
-   /*  if(a>b){
-        console.log(`La a es mayor ${a}`);
-        
-    }else{
-        console.log(`La b es mayor ${b}`); 
-    } */
-
-       const comparar= a>b?"A es mayor":"b es mayor";
-       console.log(comparar);
-       
 }
 
-Decision();
-//datosArreglo();
+//for each
+let arreglo2dimensiones=[];
+
+let arreglointerno2=[[3,4,5,6],[7,8,9]];
+
+arreglo2dimensiones.forEach((arreglointerno2, index) => {
+    console.log(`Datos ${index + 1}:`);
+    arreglointerno2.forEach((elemento) => {
+        console.log(elemento);
+    });
+});
+//funcion flecha
+//while
