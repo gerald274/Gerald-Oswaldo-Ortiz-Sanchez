@@ -13,27 +13,31 @@ const datosArreglo=()=>{
 }
 
 //for of
-let arreglo2d=[];
+let B = [[3, 4, 5, 6], [7, 8, 9]];
 
-let arreglointerno=[[3,4,5,6],[7,8,9]];
-arreglo2d.push(arreglointerno);
-for (const arreglo of arreglo2d){
-    for (const elemento of arreglo){
-        console.log(elemento);
+for (let fil of B) {
+    for (let [i, val] of fil.entries()) {
+        console.log(`${i}=${val}`);
+    }
+};
+
+// for...in
+let c = [[3, 4, 5, 6], [7, 8, 9]];
+
+for (let fil of c) {
+    for (let [i, val] of fil.entries()) {
+        console.log(`${i}=${val}`);
     }
 }
-//for in
-let arreglo2di=[];
-
-let arreglointerno1=[[3,4,5,6],[7,8,9]];
-arreglo2di.push(arreglointerno1);
-
-console.log("");
-for (let indice in arreglo2di[0],[1]) {
-    console.log(arreglo2di[0],[1][indice]);
-
+const datosarreglo = (array) => {
+    for (const datosindex in array) {
+        for (const valoresindex in array[datosindex]) {
+            console.log(`${valoresindex}=${array[datosindex][valoresindex]}`);
+        }
+    }
 }
 
+datosarreglo(c);
 //for each
 let arreglo2dimensiones=[];
 
@@ -46,37 +50,33 @@ arreglo2dimensiones.forEach((arreglointerno2, index) => {
     });
 });
 //funcion flecha
-let a3=[];
+let arregloi2 = [[3, 4, 5, 6], [7, 8, 9]];
 
-let arregloi2=[[3,4,5,6],[7,8,9]];
-a3.push(arregloi2);
-
-const leera3 = () =>{
-    a3.forEach((arregloi2, indice) =>{
-        console.log(`Datos del arreglo interno ${indice + 1}:`);
-        arregloi2.forEach(elemento => {
+const leera3 = () => {
+    arregloi2.forEach((subArreglo, index) => { 
+        console.log(`Subarreglo ${index + 1}:`); 
+        subArreglo.forEach((elemento) => {  
             console.log(elemento);
         });
     });
 };
+
 leera3();
 
 //while
-let arre4 = [];
+let b = [[1, 2, 3, 4], [5, 6, 7, 8]];
 
-let arregloin4 = [[3, 4, 5, 6], [7, 8, 9]];
-arre4.push(arregloin4);
+console.log("Ciclo while");
 
 let i = 0;
-console.log("");
-while (i < arre4[0][0].length) {
-    console.log(arre4[0][0][i]);
-    i++;
-}
 
-i = 0; 
-console.log("---");
-while (i < arre4[0][1].length) {
-    console.log(arre4[0][1][i]);
-    i++;
-}
+while (i < b.length) {
+    let v = b[i];
+    let j = 0; 
+
+    while (j < v.length) { 
+        console.log(v[j]);
+        j++; 
+    }
+    i++; 
+};
