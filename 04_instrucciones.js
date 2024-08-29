@@ -21,4 +21,7 @@ const datosArreglo = () => {
 
 datosArreglo();
 
-console.log("arreglo:", numeros);
+console.log("arreglo:");
+numeros.forEach((numero, index) => {
+    console.log(`${index + 1}. ${numero}`);
+});
