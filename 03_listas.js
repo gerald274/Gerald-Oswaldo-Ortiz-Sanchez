@@ -48,7 +48,7 @@ let datos =[ {
           datos.map((data)=>{
               console.log(`El nombre es: ${data.nombre}`);
               
-          })
+          });
   
   };
   info();
