@@ -1,8 +1,10 @@
-const perrito ={
+const perrito = {
     nombre: "gerald",
     edad: 19,
-    sexo:"m"
-}
+    sexo: "m"
+};
 console.log(perrito);
 
-let{nombre,edad,sexo}=perrito
+// Desestructuración de propiedades
+let { nombre, edad, sexo } = perrito;
+console.log(nombre, sexo);
